@@ -205,16 +205,7 @@ h2 {
   background-color: #555; 
 }
 
-/*service section*/
-#service img {
-	margin-bottom: 20px;
-}
-
-.service-captions {
-	margin-top: 50px;
-	text-align: center;
-}
-
+/*about section*/
 #parallax2 {
 	background-image:  url("images/Lime-PNG-HDa.png");
 	background-attachment: fixed;
@@ -224,7 +215,8 @@ h2 {
 	height: 600px;
 	max-height: 600px;
 	margin-top: 50px;
-	width: 100%;		
+	width: 100%;
+	text-align: center;
 }
 
 #parallax2 p {
@@ -234,10 +226,6 @@ h2 {
 	font-weight: bold;
 	text-shadow: 0 0 15px black;
 	
-}
-
-#parallax2 p:last-child {
-	float: right;
 }
 
 .slideanim {visibility:hidden;}
@@ -269,6 +257,17 @@ h2 {
 		opacity: 1;
 		-webkit-transform: translateY(0%);
 	}
+}
+
+
+/*service section*/
+#service img {
+	margin-bottom: 20px;
+}
+
+.service-captions {
+	margin-top: 50px;
+	text-align: center;
 }
 
 
@@ -453,7 +452,15 @@ footer p {
 
 @media screen and (min-width: 768px) {
 	#parallax{
-		background-size: auto;
+		background-size: auto;	
+	}
+	
+	#parallax2 {
+		text-align: left;
+	}
+	
+	#parallax2 p:last-child {
+		float: right;
 	}
 }
 
