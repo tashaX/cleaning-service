@@ -73,7 +73,17 @@ function TopButton() {
     });
 }
 
+/*mote text*/
+function showText(n) {
+	$('#' + n).show();
+	$('#b' + n).hide();
+	
+}
 
+function hideText(n) {
+	$('#' + n).hide();
+	$('#b' + n).show().focus();;
+}
 
 /*modal*/
 function openModal() {
